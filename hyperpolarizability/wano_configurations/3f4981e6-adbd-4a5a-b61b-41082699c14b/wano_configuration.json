@@ -1,0 +1,30 @@
+{
+    "commands": {},
+    "values": {
+        "Title": "mp2",
+        "Molecular structure": {
+            "Structure file": "global://DFT-Turbomole/outputs/final_structure.xyz"
+        },
+        "Basis set": {
+            "Basis set type": "aug-cc-pVDZ"
+        },
+        "DFT options": {
+            "Functional": "None",
+            "COSMO calculation": true,
+            "Rel permittivity": 4.8
+        },
+        "Type of calculation": {
+            "Hyperpolarizability": true,
+            "First hyperpolarizability": [
+                {
+                    "frequency (nm)": 1300.0
+                }
+            ],
+            "MP2": true
+        }
+    },
+    "metadata": {
+        "name": "DFT Turbomole",
+        "folder": "DFT-Turbomole"
+    }
+}

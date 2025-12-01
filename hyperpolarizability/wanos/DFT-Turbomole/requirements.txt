@@ -1,0 +1,9 @@
+PyYAML
+ase
+pymatgen
+matplotlib
+numpy==1.26.4
+scikit-spatial==7.2.0
+pyvista==0.44.0
+stpyvista==0.0.19
+sympy==1.13.3

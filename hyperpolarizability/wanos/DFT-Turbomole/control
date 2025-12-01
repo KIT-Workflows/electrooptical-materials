@@ -1,0 +1,91 @@
+$title
+Title
+$symmetry c1
+$user-defined bonds    file=coord
+$coord    file=coord
+$optimize
+ internal   off
+ redundant  off
+ cartesian  on
+ global     off
+ basis      off
+$atoms
+c  1-18,20-22,24,26,28-32,34-39,43-52                                          \
+   basis =c 6-31G*                                                             \
+   jbas  =c 6-31G*
+n  19,25,27,33                                                                 \
+   basis =n 6-31G*                                                             \
+   jbas  =n 6-31G*
+o  23                                                                          \
+   basis =o 6-31G*                                                             \
+   jbas  =o 6-31G*
+f  40-41,53                                                                    \
+   basis =f 6-31G*                                                             \
+   jbas  =f 6-31G*
+s  42                                                                          \
+   basis =s 6-31G*                                                             \
+   jbas  =s 6-31G*
+h  54-92                                                                       \
+   basis =h 6-31G*                                                             \
+   jbas  =h 6-31G*
+$basis    file=basis
+$scfmo   file=mos
+$closed shells
+ a       1-191                                  ( 2 )
+$scfiterlimit      200
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$maxcor    500 MiB  per_core
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$ricore     2000
+$rij
+$jbas    file=auxbasis
+$dft
+   functional wb97x
+   gridsize   m3
+$scfconv   7
+$rundimensions
+   natoms=92
+   nbf(CAO)=877
+   nbf(AO)=824
+$last step     escf
+$orbital_max_rnorm 0.13961011758921E-04
+$last SCF energy change = -2691.3929
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En
+-2691.392937543    -16987.99553390     7849.410026988     0.000000000000     0.000000000000     6690.510376281
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from ridft
+  x     1.64306017477585    y    -0.43987402380726    z    -8.72867305410432    a.u.
+   | dipole | =   22.6035535118  debye
+$scfinstab hyperpol nm
+45560000000.0
+1400.0
+$end
