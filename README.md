@@ -27,7 +27,7 @@ These calculations can be performed for molecules in both gas phase and solution
 </figure>
 
 ### Qucik Start
-Download the workflow file named "hyperpolarizability" and drag into Simstack. All parameters in the workflow have been set up and can be used directly. Please note the parameters are set according to the environment in this paper and can be modified as needed.
+Download the workflow file named "hyperpolarizability" and drag into Simstack. All parameters in the workflow have been set up and can be used directly. Please note that the parameters are set according to the environment in this paper and can be modified as needed.
 
 
 This document describes the components of the workflow and provides instructions on how to use them.
