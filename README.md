@@ -44,7 +44,7 @@ To construct your workflow, follow these steps:
 
 ## DFT-Turbomole Wano
 
-# Step-by-Step Guide
+### Step-by-Step Guide
 
 1. **Activate DFT-Turbomole**
     - After dragging `DFT-Turbomole` to the center window, double-click on `DFT-Turbomole` to activate it.
@@ -52,10 +52,10 @@ To construct your workflow, follow these steps:
 2. **Configure Parameters**
     - Click on the Wano icon to display the parameters (refer to Figure 2).
     
-    # Title Configuration
+    #### Title Configuration
     - Click on the title box and name it (labeled as 1 in Figure 2).
 
-    # Structure File Setup
+    #### Structure File Setup
     - Click on the box next to "Structure file type" under the "Molecular structure" section (labeled as 2 in Figure 2). Default is xyz.
     - Click on the box next to "Structure file" under the "Molecular structure" section (labeled as 3 in Figure 2). Choose and upload the xyz file, or manually enter the file path. 
 
