@@ -1,0 +1,28 @@
+{
+    "commands": {},
+    "values": {
+        "Title": "b3",
+        "Molecular structure": {
+            "Structure file": "local:///home/jia/Desktop/pp/pp1.xyz"
+        },
+        "Basis set": {
+            "Basis set type": "aug-cc-pVDZ"
+        },
+        "DFT options": {
+            "Functional": "b3-lyp"
+        },
+        "Type of calculation": {
+            "Hyperpolarizability": true,
+            "First hyperpolarizability": [
+                {
+                    "frequency (nm)": 1300.0
+                }
+            ],
+            "Plot Homo-Lumo Orbt": true
+        }
+    },
+    "metadata": {
+        "name": "DFT Turbomole",
+        "folder": "DFT-Turbomole"
+    }
+}

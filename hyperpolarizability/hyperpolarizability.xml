@@ -1,0 +1,9 @@
+<root wfxml_version="2.0">
+  <WaNo type="DFT-Turbomole" uuid="5dcf5bc5-efb9-4150-a0d2-80297290f1aa" id="0" name="DFT-Turbomole"/>
+  <WaNo type="DFT-Turbomole" uuid="d742ddc2-91d6-4535-9841-f36fde826c05" id="1" name="DFT-Turbomole_1"/>
+  <WaNo type="DFT-Turbomole" uuid="2348ed2c-cfe6-4d74-9185-7cd20d6135d0" id="2" name="DFT-Turbomole_2"/>
+  <WaNo type="DFT-Turbomole" uuid="1131ac39-e4eb-47c2-9024-7517b3ddb0e2" id="3" name="DFT-Turbomole_3"/>
+  <WaNo type="DFT-Turbomole" uuid="e2935297-65e0-4cfb-9726-44e8abbb8fc1" id="4" name="DFT-Turbomole_4"/>
+  <WaNo type="DFT-Turbomole" uuid="55e6a1a5-2969-463f-978e-71c9f1a9466b" id="5" name="DFT-Turbomole_5"/>
+  <WaNo type="DFT-Turbomole" uuid="3f4981e6-adbd-4a5a-b61b-41082699c14b" id="6" name="DFT-Turbomole_6"/>
+</root>

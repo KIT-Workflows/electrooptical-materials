@@ -1,0 +1,164 @@
+
+ cosmoprep (nano13.int-nano.int.kit.edu) : TURBOMOLE rev. V7-6 19 Oct 2021 at 10:10:11 compiled Oct 19th 2021
+ Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
+
+
+    2025-11-19 04:49:20.353 
+
+ ****************************************************
+ ***             Set COSMO parameters             ***
+ ****************************************************
+ 
+ enter          : take the proposal
+ d              : use default
+ new value      : enter own value
+ 
+ epsilon = infinity (default)
+ 
+ refind = none (default)
+ 
+ LR terms on (default, type on/off, ricc2)
+ 
+  COSMO RF equil. is not set (default, type (<irrep>{mult.} state) e.g. (b2g{1} 4), ricc2)
+ 
+ nppa =  1082 (default)
+ 
+ nspa =    92 (default)
+ 
+ disex = 10.00 (default)
+ 
+ rsolv = min(rad(h)) (default)
+ 
+ routf =  0.85 (default)
+ 
+ cavity = closed (default)
+ 
+ amat = amat.cosmo (default)
+ 
+ ****************************************************
+ ***           radius definition menu             ***
+ ****************************************************
+ 
+ ( #atoms=   54 --- #radius=    0 )
+ 
+ enter your definitions in the following way: 
+ <order> <atoms> <radius>
+ 
+ <order>  : r  - define radius
+          : qq - quit
+          : *  - finish radius definition
+ 
+ <atoms>  : all
+          : a list of atomic indices like 1-5,7,10
+          : an element name like "c"
+ 
+  <radius>: o  - optimized radii only
+          : b  - opt. rad. if defined,
+               non-opt. rad. (mostly bondii*1.17) else
+          : own proposal like 1.256
+            if radius is in Bohr units append b
+ 
+Group   atom   mtype   radius
+    1      1    c        3.78
+           2    c        3.78
+           3    c        3.78
+           4    c        3.78
+           5    c        3.78
+           6    c        3.78
+           7    c        3.78
+           8    c        3.78
+           9    c        3.78
+          10    c        3.78
+          11    c        3.78
+          12    c        3.78
+          13    c        3.78
+          15    c        3.78
+          16    c        3.78
+          18    c        3.78
+          19    c        3.78
+          20    c        3.78
+          24    c        3.78
+          25    c        3.78
+          26    c        3.78
+          27    c        3.78
+          28    c        3.78
+          29    c        3.78
+          30    c        3.78
+          31    c        3.78
+    2     14    n        3.46
+          21    n        3.46
+          22    n        3.46
+          23    n        3.46
+    3     17    o        3.25
+          53    o        3.25
+    4     32    h        2.46
+          33    h        2.46
+          34    h        2.46
+          35    h        2.46
+          36    h        2.46
+          37    h        2.46
+          38    h        2.46
+          39    h        2.46
+          40    h        2.46
+          41    h        2.46
+          42    h        2.46
+          43    h        2.46
+          44    h        2.46
+          45    h        2.46
+          46    h        2.46
+          47    h        2.46
+          48    h        2.46
+          49    h        2.46
+          50    h        2.46
+          51    h        2.46
+          52    h        2.46
+          54    h        2.46
+ 
+ ****************************************************
+ ***           radius definition menu             ***
+ ****************************************************
+ 
+ ( #atoms=   54 --- #radius=   54 )
+ 
+ enter your definitions in the following way: 
+ <order> <atoms> <radius>
+ 
+ <order>  : r  - define radius
+          : qq - quit
+          : *  - finish radius definition
+ 
+ <atoms>  : all
+          : a list of atomic indices like 1-5,7,10
+          : an element name like "c"
+ 
+  <radius>: o  - optimized radii only
+          : b  - opt. rad. if defined,
+               non-opt. rad. (mostly bondii*1.17) else
+          : own proposal like 1.256
+            if radius is in Bohr units append b
+ 
+
+****************************************************
+***           Cosmo output definition            ***
+****************************************************
+
+enter          : take the proposal
+d              : use default
+new value      : enter own value
+
+COSMO output file is out.ccf  (default)
+ Do you want to make a correlated calculation
+ with rimp2/ricc2 (set up $cosmo_correlated)
+ (y/n, default = n)
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.07 seconds
+         total wall-time :   0.11 seconds
+    ------------------------------------------------------------------------
+
+   ****  cosmoprep : all done  ****
+
+
+    2025-11-19 04:49:20.448 
+

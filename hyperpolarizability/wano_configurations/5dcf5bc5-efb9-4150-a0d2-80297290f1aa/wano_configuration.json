@@ -1,0 +1,24 @@
+{
+    "commands": {},
+    "values": {
+        "Title": "opt",
+        "Molecular structure": {
+            "Structure file": "local:///home/jia/Desktop/pp/pp1.xyz"
+        },
+        "DFT options": {
+            "Functional": "b3-lyp"
+        },
+        "Type of calculation": {
+            "Structure optimisation": true,
+            "Max optimization cycles": 500,
+            "First hyperpolarizability": [
+                {}
+            ],
+            "Frequency calculation": true
+        }
+    },
+    "metadata": {
+        "name": "DFT Turbomole",
+        "folder": "DFT-Turbomole"
+    }
+}

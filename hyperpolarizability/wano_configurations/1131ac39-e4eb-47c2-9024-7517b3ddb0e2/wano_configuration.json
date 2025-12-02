@@ -1,0 +1,29 @@
+{
+    "commands": {},
+    "values": {
+        "Title": "m062x",
+        "Molecular structure": {
+            "Structure file": "global://DFT-Turbomole/outputs/final_structure.xyz"
+        },
+        "Basis set": {
+            "Basis set type": "aug-cc-pVDZ"
+        },
+        "DFT options": {
+            "Functional": "m06-2x",
+            "COSMO calculation": true,
+            "Rel permittivity": 4.8
+        },
+        "Type of calculation": {
+            "Hyperpolarizability": true,
+            "First hyperpolarizability": [
+                {
+                    "frequency (nm)": 1300.0
+                }
+            ]
+        }
+    },
+    "metadata": {
+        "name": "DFT Turbomole",
+        "folder": "DFT-Turbomole"
+    }
+}

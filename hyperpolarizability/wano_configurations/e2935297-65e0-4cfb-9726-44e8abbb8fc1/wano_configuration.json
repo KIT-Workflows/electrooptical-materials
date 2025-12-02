@@ -1,0 +1,30 @@
+{
+    "commands": {},
+    "values": {
+        "Title": "wb97xd",
+        "Molecular structure": {
+            "Structure file": "global://DFT-Turbomole/outputs/final_structure.xyz"
+        },
+        "Basis set": {
+            "Basis set type": "aug-cc-pVDZ"
+        },
+        "DFT options": {
+            "Functional": "wb97x",
+            "vdW correction": "D3-BJ",
+            "COSMO calculation": true,
+            "Rel permittivity": 4.8
+        },
+        "Type of calculation": {
+            "Hyperpolarizability": true,
+            "First hyperpolarizability": [
+                {
+                    "frequency (nm)": 1300.0
+                }
+            ]
+        }
+    },
+    "metadata": {
+        "name": "DFT Turbomole",
+        "folder": "DFT-Turbomole"
+    }
+}
