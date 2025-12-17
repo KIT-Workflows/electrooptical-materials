@@ -26,7 +26,7 @@ def plot_ratio_bars(
     if df.shape[1] >= 9:
         func_cols = list(df.columns[3:9]) 
     else:
-        candidates = ["B3LYP","PBE0","M062X","wb97xd","cam-B3LYP","MP2"]
+        candidates = ["B3LYP","PBE0","M062X","wb97XD","cam-B3LYP","MP2"]
         func_cols = [c for c in df.columns if str(c).split()[0] in candidates]
 
         order_map = {k:i for i,k in enumerate(candidates)}

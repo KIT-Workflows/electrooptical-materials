@@ -212,7 +212,7 @@ def main():
 	max_sources= sorted_df["source"].max()
 	min_sources= sorted_df["source"].min()
 	#fig, ax = plt.subplots(figsize=global_figsize)
-	for i in range(min_sources, max_sources+1):
+	for i in range(int(min_sources), int(max_sources)+1):
 		fig, ax = plt.subplots(figsize=global_figsize)
 		sorted_df_i = sorted_df[sorted_df["source"] == i]
 		for col in columns_to_plot:
