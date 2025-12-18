@@ -289,6 +289,37 @@ def main():
 		plt.cla()#plt.show()
 		plt.close()  # Close the figure to free memory
 
+	
+# --- NEW TYPE: Scatter Plot (Value vs Name) ---
+	for i in range(int(min_sources), int(max_sources)+1):
+		fig, ax = plt.subplots(figsize=global_figsize)
+		sorted_df_i = sorted_df[sorted_df["source"] == i]
+		if sorted_df_i.empty: continue
+		
+		x_values = np.arange(len(sorted_df_i))
+		
+		# 1. Plot all computational methods with 'x'
+		for col in columns_to_plot:
+			ax.plot(x_values, sorted_df_i[col], "x", label=col)
+			
+		# 2. Plot 'exp' specially
+		# Special marking: Black color, slightly larger or bolder to stand out
+		ax.plot(x_values, sorted_df_i["exp"], "x", color='black', 
+				label='Experiment', markersize=6, markeredgewidth=1.5)
+		
+		ax.set_ylabel(r"value [$10^{-30}$ esu]", usetex=True)
+		
+		# X-axis is Name
+		ax.set_xticks(x_values)
+		ax.set_xticklabels([fr"\texttt{{{label}}}" for label in sorted_df_i.index], rotation=90, usetex=True)
+		
+		ax.legend()
+		output_file = f"example_data/data_sum/plot_source_{i}_scatter.pdf"
+		plt.savefig(output_file, bbox_inches='tight')
+		plt.clf(); plt.cla(); plt.close()
+		print(f"Generated {output_file}")
+
+
 if __name__ == "__main__":
 	main()
 
