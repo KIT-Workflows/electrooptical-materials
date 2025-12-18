@@ -212,7 +212,7 @@ def main():
 	max_sources= sorted_df["source"].max()
 	min_sources= sorted_df["source"].min()
 	#fig, ax = plt.subplots(figsize=global_figsize)
-	for i in range(min_sources, max_sources+1):
+	for i in range(int(min_sources), int(max_sources)+1):
 		fig, ax = plt.subplots(figsize=global_figsize)
 		sorted_df_i = sorted_df[sorted_df["source"] == i]
 		for col in columns_to_plot:
@@ -245,7 +245,7 @@ def main():
 	#now we still do it separately but plot the ratios. x axis is just equally spaced from 0 to N where N
 	#is the number of entries in sorted_df_i
 	
-	for i in range(min_sources, max_sources+1):	
+	for i in range(int(min_sources), int(max_sources)+1):	
 		fig, ax = plt.subplots(figsize=global_figsize)
 		sorted_df_i = sorted_df[sorted_df["source"] == i]
 		x_values = np.arange(len(sorted_df_i))
@@ -266,7 +266,7 @@ def main():
 
 	#jia likes bar diagrams so we do the bar diagrams for the ratios (same as obve just not point plots)
 	
-	for i in range(min_sources, max_sources+1):
+	for i in range(int(min_sources), int(max_sources)+1):
 		fig, ax = plt.subplots(figsize=global_figsize)
 		sorted_df_i = sorted_df[sorted_df["source"] == i]
 		x_values = np.arange(len(sorted_df_i))
