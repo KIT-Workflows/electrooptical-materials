@@ -1,4 +1,4 @@
-**Welcome to DFT-Turbomole, a WaNo designed for predicting hyperpolarizability in molecules. Our workflow leverages Density Functional Theory (DFT) calculations using the Turbomole software suite. This WaNo enables efficient computation and screening of hyperpolarizability across a diverse range of molecular structures.**
+**Welcome to DFT-Turbomole, a WaNo designed for predicting molecular hyperpolarizability using SIMSTACK. Our workflow leverages Density Functional Theory (DFT) calculations using the Turbomole software suite (v.7.6). This WaNo enables efficient computation and screening of hyperpolarizability across a diverse range of molecular structures.**
 ---
 ## Table of Contents
 - [DFT-Turbomole WaNo](#dft-turbomole-wano)
@@ -26,7 +26,7 @@ These calculations can be performed for molecules in both gas phase and solution
 </figcaption>
 </figure>
 
-### Qucik Start
+### Quick Start
 Download the workflow file named "hyperpolarizability" and drag into Simstack. All parameters in the workflow have been set up and can be used directly. Please note that the parameters are set according to the environment in this paper and can be modified as needed.
 
 
@@ -115,7 +115,7 @@ To perform hyperpolarizability calculations using the DTF-Turbomole_1 WANO, foll
     - If additional frequencies are needed, press the green cross to add another frequency in the new box that appears.
     - If MP2 calculation is needed, click "MP2" button under "Type of Calculation" (in Figure 5). At this point, there is no need to specify the functional in "DFT Options". Note that this option does not need to be selected when performing DFT calculations.
 
-**Note**: In this WANO, the default hyperpolarizability calculation is the Pockels effect. For more details, please refer to the parameters explanation.
+**Note**: In this WANO, the default hyperpolarizability component in the output is the zzz component is related the Pockels effect. Still the full tensors are computed if needed by Turbomole. For more details, please refer to the parameters explanation.
 
 <figure align="centering">
     <img src="figures/fig5.png" alt="Alt Text">
@@ -147,7 +147,7 @@ In this section, we will explain each of the following parameters in detail:
 - **Type of calculation**
     - _**Structure optimization:**_ Performing geometry optimization if you select this option. The final structure will be stored in the output directory.
     - _**Excited states calculation:**_ Computing the electronic states of a molecule that are higher in energy than the ground state using the Time-Dependent Density Functional Theory (TD-DFT) method.
-    - _**Hyperpolarizability:**
+    - _**Hyperpolarizability:**_
          - The equation ω₃ = −(ω₁ + ω₂) is fundamental in describing energy conservation in three-wave mixing processes in nonlinear optics. Here are some useful special cases:
            
          - **Second Harmonic Generation (SHG), β(−2ω; ω, ω)**: Two photons of the same frequency (ω) combine to generate a new photon with twice the frequency (2ω). Commonly used in laser technology for frequency doubling.
